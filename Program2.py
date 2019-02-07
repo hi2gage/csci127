@@ -4,6 +4,8 @@
 # Gage Halverson
 # --------------------------------------
 print("this is a branch test")
+print("this is a branch test 2")
+
 def process_season(season, games_played, points_earned):
     print("Season: " + str(season) + ", Games Played: " + str(games_played) +
           ", Points earned: " + str(points_earned))
