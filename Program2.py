@@ -3,13 +3,13 @@
 # February 7, 2019
 # Gage Halverson
 # --------------------------------------
-
+print("this is a branch test")
 def process_season(season, games_played, points_earned):
     print("Season: " + str(season) + ", Games Played: " + str(games_played) +
           ", Points earned: " + str(points_earned))
     print("Possible Win-Tie-Loss Records")
     print("-----------------------------")
-    
+
 # --------------------------------------
 
 def process_seasons(seasons):
