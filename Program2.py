@@ -9,6 +9,7 @@ def process_season(season, games_played, points_earned):
           ", Points earned: " + str(points_earned))
     print("Possible Win-Tie-Loss Records")
     print("-----------------------------")
+    
 
 # --------------------------------------
 
