@@ -7,13 +7,43 @@
 # -----------------------------------------+
 
 def flush(hand):
-        return 5
+    points = 0
+    if hand[0][1] == hand[1][1] == hand[2][1] == hand[3][1] == hand[4][1]:
+        points +=5
+    return points
 
 def pair(hand):
-    return 2
+    points_pair = 0
+    for i in range(len(hand)):
+        for n in range(i, len(hand)):
+            if hand[i][0] == hand[n][0] and i != n:
+                points_pair += 2
+    return points_pair
 
 def fifteen(hand):
-    return 2
+    dic = {
+        "Two" : 2,
+        "Three": 3,
+        "Four" : 4,
+        "Five" : 5,
+        "Six" : 6,
+        "Seven" : 7,
+        "Eight" : 8,
+        "Nine" : 9,
+        "Ten" : 10,
+        "Jack" : 10,
+        "Queen" : 10,
+        "King" : 10,
+        "Ace" : 11
+        }
+    points_15 = 0
+    for i in range(len(hand)):
+        for n in range(i, len(hand)):
+            if dic[hand[i][0]] == dic[hand[n][0]] and i != n:
+                points_15 += 2
+    return points_15
+
+
 def evaluate_hand(hand):
     points_scored = flush(hand) + pair(hand) + fifteen(hand)
     print("Points scored: " + str(points_scored))
