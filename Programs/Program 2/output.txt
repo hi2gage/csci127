@@ -1,0 +1,60 @@
+Hand 1: Two Spades, Four Spades, Six Spades, Eight Spades, Ten Clubs
+Points scored: 0
+
+Hand 2: Two Spades, Four Spades, Six Spades, Eight Spades, Ten Spades
+Points scored: 5
+
+Hand 3: Two Spades, Two Clubs, Four Spades, Six Spades, Eight Spades
+Points scored: 2
+
+Hand 4: Two Spades, Four Clubs, Four Diamonds, Six Spades, Eight Spades
+Points scored: 2
+
+Hand 5: Two Spades, Four Clubs, Six Spades, Six Hearts, Eight Spades
+Points scored: 2
+
+Hand 6: Two Spades, Four Clubs, Six Spades, Eight Spades, Eight Diamonds
+Points scored: 2
+
+Hand 7: Two Spades, Two Clubs, Two Diamonds, Four Hearts, Six Hearts
+Points scored: 6
+
+Hand 8: Two Spades, Four Spades, Four Clubs, Four Diamonds, Six Hearts
+Points scored: 6
+
+Hand 9: Two Spades, Four Spades, Six Spades, Six Clubs, Six Diamonds
+Points scored: 6
+
+Hand 10: Two Spades, Two Clubs, Two Hearts, Two Diamonds, Four Spades
+Points scored: 12
+
+Hand 11: Two Spades, Four Diamonds, Four Hearts, Four Clubs, Four Diamonds
+Points scored: 12
+
+Hand 12: Four Clubs, Five Diamonds, Six Hearts, Seven Spades, Ace Spades
+Points scored: 2
+
+Hand 13: Five Diamonds, Six Hearts, Seven Spades, Ten Clubs, Ace Clubs
+Points scored: 2
+
+Hand 14: Five Diamonds, Six Hearts, Seven Spades, Jack Clubs, Ace Clubs
+Points scored: 2
+
+Hand 15: Five Diamonds, Six Hearts, Seven Spades, Queen Clubs, Ace Clubs
+Points scored: 2
+
+Hand 16: Five Diamonds, Six Hearts, Seven Spades, King Clubs, Ace Clubs
+Points scored: 2
+
+Hand 17: Five Hearts, Five Spades, Jack Clubs, Jack Spades, Jack Hearts
+Points scored: 20
+
+Hand 18: Seven Hearts, Seven Diamonds, Seven Clubs, Eight Hearts, Eight Diamonds
+Points scored: 20
+
+Hand 19: Six Clubs, Seven Clubs, Eight Clubs, Nine Clubs, Ten Clubs
+Points scored: 9
+
+Hand 20: Three Spades, Five Hearts, Seven Clubs, Nine Diamonds, Ace Diamonds
+Points scored: 0
+
