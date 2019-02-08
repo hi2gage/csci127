@@ -5,7 +5,6 @@
 # -----------------------------------------|
 # A simplified Cribbage scoring system.    |
 # -----------------------------------------+
-
 def flush(hand):
     if hand[0][1] == hand[1][1] == hand[2][1] == hand[3][1] == hand[4][1]:
         return 5
@@ -22,7 +21,7 @@ def fifteen(hand):
     pass
 def evaluate_hand(hand):
     points_scored = flush(hand) + pair(hand) + fifteen(hand)
-    
+
 
 def print_hand(hand, number):
     print("Hand " + number + ": " + hand)
