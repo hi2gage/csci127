@@ -1,8 +1,8 @@
 # ---------------------------------------
 # CSCI 127, Joy and Beauty of Data
-# Program 1: GPA Calculator 
+# Program 1: GPA Calculator
 # Gage Halverson
-# Last Modified: January 25, 2019 
+# Last Modified: January 25, 2019
 # ---------------------------------------
 # Asks for how many credits being taken then uses a
 # while loop to ask for the grade and how
@@ -15,7 +15,7 @@
 # divied by the sum of the credits list and
 # displayed as calulated GPA
 # ---------------------------------------
-import sys
+import sys 
 
 #dot product fuction
 def dot(v1, v2):
@@ -52,11 +52,11 @@ def translate(grade):
 #returns the integer value for string verison of the grade
     return dic_weights[grade]
 
-def main():    
+def main():
 #Lists of grades and weights
     grades = []
     weights = []
-    
+
 #prompts User for # of Classes taken
     number_classes = int(input("Enter the number of courses you are taking:"))
     i = 0
@@ -66,7 +66,7 @@ def main():
     while i <= number_classes:
 
         grade_str = input("Enter grade for course " + str(i) +":")
-        
+
         grade_int = translate(grade_str)
         grades.insert(i, grade_int)
 
@@ -75,10 +75,9 @@ def main():
 
         print()
         i += 1
-#Calls Dot product function then divides by the sum of weights 
+#Calls Dot product function then divides by the sum of weights
     gpa = dot(weights, grades)/sum(weights)
     print(format(gpa, '.2f'))
 
-    
-main()
 
+main()
