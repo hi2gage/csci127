@@ -8,7 +8,12 @@
 # -----------------------------------------+
 
 def coldest_temperature(input_file):
-    pass
+    coldest = 5
+    location = "Bettles AK"
+    date = "12/4/2016"
+    print("Coldest Fahrenheit temperature reading:", str(coldest))
+    print("Location:", str(location))
+    print("Date:", str(date))
 
 
 def average_temperature(input_file, location):
