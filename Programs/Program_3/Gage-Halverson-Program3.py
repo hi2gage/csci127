@@ -6,7 +6,20 @@
 # -----------------------------------------+
 # Provide a brief overview of the program. |
 # -----------------------------------------+
-    
+
+def coldest_temperature(input_file):
+    pass
+
+
+def average_temperature(input_file, location):
+    pass
+
+def all_stations_by_state(input_file, state):
+    pass
+
+
+
+
 
 # -----------------------------------------+
 # Do not change anything below this line   |
