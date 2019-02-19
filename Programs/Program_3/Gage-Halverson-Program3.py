@@ -6,9 +6,25 @@
 # -----------------------------------------+
 # Provide a brief overview of the program. |
 # -----------------------------------------+
+import csv
+
 
 def coldest_temperature(input_file):
-    coldest = 5
+    with open(input_file) as csvfile:
+        lines = []
+        i = 0
+        reader = csv.reader(csvfile)
+        for row in reader:
+            lines.append(row[0])
+            i += 1
+            if i >= 1000:
+                break
+        print(min(lines))
+        #print("smallest", str(min(lines[1])))
+
+
+
+        coldest = 5
     location = "Bettles AK"
     date = "12/4/2016"
     print("Coldest Fahrenheit temperature reading:", str(coldest))
