@@ -205,8 +205,9 @@ def largest_spread_of_temp_at_location(input_file, state):
                     print("Date:", str(date))
                     break
 
-                #print("Error accessing file(you most likely entered Washington)")
-                #break
+                """else:
+                    print("Error accessing file(you most likely entered Washington)")
+                    break"""
 
             #Goes to next line in fle
             input_line = location_file.readline()
