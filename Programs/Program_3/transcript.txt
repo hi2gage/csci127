@@ -1,0 +1,113 @@
+1. Identify coldest temperature.
+2. Identify average temperature for a given location.
+3. Identify all recording station locations by state.
+4. Something interesting, non-trivial and not a variation of the above options.
+5. Quit.
+
+Enter your choice: 1
+
+Coldest Fahrenheit temperature reading: -35
+Location: Bettles AK
+Date: 12/4/2016
+
+1. Identify coldest temperature.
+2. Identify average temperature for a given location.
+3. Identify all recording station locations by state.
+4. Something interesting, non-trivial and not a variation of the above options.
+5. Quit.
+
+Enter your choice: 2
+
+Enter desired location (e.g. Miles City, MT): Miles City, MT
+Number of readings: 53
+Average temperature: 49.47
+
+
+1. Identify coldest temperature.
+2. Identify average temperature for a given location.
+3. Identify all recording station locations by state.
+4. Something interesting, non-trivial and not a variation of the above options.
+5. Quit.
+
+Enter your choice: 2
+
+Enter desired location (e.g. Miles City, MT): miles city, mt
+Number of readings: 53
+Average temperature: 49.47
+
+
+1. Identify coldest temperature.
+2. Identify average temperature for a given location.
+3. Identify all recording station locations by state.
+4. Something interesting, non-trivial and not a variation of the above options.
+5. Quit.
+
+Enter your choice: 2
+
+Enter desired location (e.g. Miles City, MT): bozeman, mt
+Number of readings: 0
+Average temperature: Not Applicable
+
+1. Identify coldest temperature.
+2. Identify average temperature for a given location.
+3. Identify all recording station locations by state.
+4. Something interesting, non-trivial and not a variation of the above options.
+5. Quit.
+
+Enter your choice: 3
+
+Enter name of state (e.g. Montana): Montana
+Recording Stations
+------------------
+ 1. Billings
+ 2. Butte
+ 3. Cut Bank
+ 4. Dillon
+ 5. Glasgow
+ 6. Great Falls
+ 7. Havre
+ 8. Helena
+ 9. Kalispell
+10. Miles City
+11. Missoula
+
+1. Identify coldest temperature.
+2. Identify average temperature for a given location.
+3. Identify all recording station locations by state.
+4. Something interesting, non-trivial and not a variation of the above options.
+5. Quit.
+
+Enter your choice: 3
+
+Enter name of state (e.g. Montana): NEW YORK
+Recording Stations
+------------------
+ 1. Albany
+ 2. Binghamton
+ 3. Buffalo
+ 4. Glens Falls
+ 5. Islip
+ 6. New York
+ 7. Rochester
+ 8. Syracuse
+
+1. Identify coldest temperature.
+2. Identify average temperature for a given location.
+3. Identify all recording station locations by state.
+4. Something interesting, non-trivial and not a variation of the above options.
+5. Quit.
+
+Enter your choice: 3
+
+Enter name of state (e.g. Montana): District of Columbia
+There are no recording stations
+
+1. Identify coldest temperature.
+2. Identify average temperature for a given location.
+3. Identify all recording station locations by state.
+4. Something interesting, non-trivial and not a variation of the above options.
+5. Quit.
+
+Enter your choice: 5
+
+Goodbye!

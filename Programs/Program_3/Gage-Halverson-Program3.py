@@ -2,8 +2,13 @@
 # CSCI 127, Joy and Beauty of Data         |
 # Program 3: Weather CSV Library           |
 # Gage Halverson                           |
-# Last Modified: ??, 2019                  |
+# Last Modified: Feb, 26 2019              |
 # -----------------------------------------+
+# Provide a brief overview of the program. |
+# Provide a brief overview of the program. |
+# Provide a brief overview of the program. |
+# Provide a brief overview of the program. |
+# Provide a brief overview of the program. |
 # Provide a brief overview of the program. |
 # -----------------------------------------+
 
@@ -166,38 +171,47 @@ def largest_spread_of_temp_at_location(input_file, state):
         #Goes to next line in fle
         input_line = location_file.readline()
 
-    max_spread = max(spread)
-
-    #Goes back to top of the list
-    location_file.seek(0)
-    input_line = location_file.readline()
-    input_line = location_file.readline()#called again to skip reference line
-
-    #Runs through all the lines
-    i = 0
-    while input_line:
-        state_value = (value_1[-3])
 
 
-        value_1 = input_line.split(",")
-        if state.lower() == state_value.lower():
-            if max_spread == (int(value_1[-8]) - int(value_1[-7])):
-                #Compiles the City and State
-                city = (value_1[5])
-                state = (value_1[6])
-                location = city +" "+ state
-                location = location[1:-1]
 
-                #Complies the Date
-                date = value_1[4]
-                break
-
-        #Goes to next line in fle
+    if len(spread) == 0:
+        print("There are no recording stations")
+    else:
+        max_spread = max(spread)
+        #Goes back to top of the list
+        location_file.seek(0)
         input_line = location_file.readline()
+        input_line = location_file.readline()#called again to skip reference line
 
-    print("Widest Spread of Fahrenheit temperature reading:", str(max_spread))
-    print("Location:", str(location))
-    print("Date:", str(date))
+        #Runs through all the lines
+        i = 0
+        while input_line:
+            state_value = (value_1[-3])
+            value_1 = input_line.split(",")
+            if state.lower() == state_value.lower():
+                if max_spread == (int(value_1[-8]) - int(value_1[-7])):
+                    #Compiles the City and State
+                    city = (value_1[5])
+                    state = (value_1[6])
+                    print(state)
+                    print(city)
+                    location = city +" "+ state
+                    location = location[1:-1]
+
+                    #Complies the Date
+                    date = value_1[4]
+                    print("Widest Spread of Fahrenheit temperature reading:", str(max_spread))
+                    print("Location:", str(location))
+                    print("Date:", str(date))
+                    break
+
+                #print("Error accessing file(you most likely entered Washington)")
+                #break
+
+            #Goes to next line in fle
+            input_line = location_file.readline()
+
+
 
 # -----------------------------------------+
 # Do not change anything below this line   |
