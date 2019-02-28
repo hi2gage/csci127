@@ -276,7 +276,7 @@ def main():
     for states in state_list:
         print("--------------------------------------------")
         print(states)
-        right_temp = average_temperature(input_file, states)
+        right_temp = largest_spread_of_temp_at_location(input_file, states)
         if right_temp != "None":
             right.append(right_temp)
         print("--------------------------------------------")

@@ -147,56 +147,74 @@ def all_stations_by_state(input_file, state):
             print("{:>2d}".format(j+1) + ".",locations[j])
 
 
-def largest_spread_of_temp_at_location(input_file, state_user):
+def largest_spread_of_temp_at_location(input_file, state):
+
+    #creates list of all the spreads
+    spread = []
 
     #Opens file and reads each line into list
     location_file = open(input_file, "r")
     input_line = location_file.readline()
     input_line = location_file.readline()#called again to skip reference line
 
-    #Defines spread value and location
-    spread_var = 0
-    location = ""
 
     #Runs through all the lines
-    i = 0
-    j = 0
-    k = 0
     while input_line:
-
         value_1 = input_line.split(",")
         state_value = (value_1[-3])
         report_location = value_1[1]
 
-        #checks to see if the states match and if the spread is larger then the previous value
-        if state_user.lower() == state_value.lower():
-            if (int(value_1[7]) - int(value_1[8])) > int(spread_var):
+        #checks to see if the states match
+        if state.lower() == state_value.lower():
+            spread.append(int(value_1[-8]) - int(value_1[-7]))
 
-            #sets new spread value
-                spread_var = (int(value_1[7]) - int(value_1[8]))
-
-                #sets location value
-                city = (value_1[5])
-                state = (value_1[6])
-                location = city +" "+ state
-                location = location[1:-1]
-                date = value_1[4]
-                input_line = location_file.readline()
-                i += 1
-            else:
-                input_line = location_file.readline()
-                j += 1
-        else:
-            input_line = location_file.readline()
-            k += 1
+        #Goes to next line in fle
+        input_line = location_file.readline()
 
 
-    if spread_var == 0:
+
+
+    if len(spread) == 0:
         print("There are no recording stations")
     else:
-        print("Widest Spread of Fahrenheit temperature reading:", str(spread_var))
-        print("Location:", str(location))
-        print("Date:", str(date))
+        max_spread = max(spread)
+        #Goes back to top of the list
+        location_file.seek(0)
+        input_line = location_file.readline()
+        input_line = location_file.readline()#called again to skip reference line
+
+        #Runs through all the lines
+
+        i = 0
+        while input_line:
+            state_value = (value_1[-3])
+            print(state_value)
+            print(state)
+            value_1 = input_line.split(",")
+            if state.lower() == state_value.lower():
+                if max_spread == (int(value_1[-8]) - int(value_1[-7])):
+                    #Compiles the City and State
+                    city = (value_1[5])
+                    state = (value_1[6])
+                    print(state)
+                    print(city)
+                    location = city +" "+ state
+                    location = location[1:-1]
+
+                    #Complies the Date
+                    date = value_1[4]
+                    print("Widest Spread of Fahrenheit temperature reading:", str(max_spread))
+                    print("Location:", str(location))
+                    print("Date:", str(date))
+                    break
+
+                """else:
+                    print("Error accessing file(you most likely entered Washington)")
+                    break"""
+
+            #Goes to next line in fle
+            input_line = location_file.readline()
+
 
 
 # -----------------------------------------+
