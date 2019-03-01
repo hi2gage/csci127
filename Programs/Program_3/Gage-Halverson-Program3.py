@@ -2,14 +2,16 @@
 # CSCI 127, Joy and Beauty of Data         |
 # Program 3: Weather CSV Library           |
 # Gage Halverson                           |
-# Last Modified: Feb, 26 2019              |
+# Last Modified: Feb, 28 2019              |
 # -----------------------------------------+
-# Provide a brief overview of the program. |
-# Provide a brief overview of the program. |
-# Provide a brief overview of the program. |
-# Provide a brief overview of the program. |
-# Provide a brief overview of the program. |
-# Provide a brief overview of the program. |
+# The program is sectioned off into 4      |
+# functions. #1 finding the coldest        |
+# Temperature. #2 Find the average Temp    |
+# based on state. #3 Find all stations for |
+# a certain state. #4 Find the largest     |
+# spread between high and low temperature  |
+# for a certain state. Main() is where the |
+# menu is located                          |
 # -----------------------------------------+
 
 
