@@ -1,33 +1,42 @@
 # -----------------------------------------------------
 # CSCI 127, Lab 8
 # March 7, 2019
-# Your Name
+# Gage Halverson
 # -----------------------------------------------------
 class Contact:
+    #creates new instance
     def __init__(self, first_name, last_name, phone_number):
         self.first_name = first_name
         self.last_name = last_name
         self.phone_number = phone_number
         self.title = ""
 
+    #prints name and phone_number
     def print_entry(self):
+        #checks to see if title is defined yet
         if len(self.title) != 0:
             name = self.title + " " + self.first_name + " " + self.last_name
         else:
             name = self.first_name + " " + self.last_name
+            
+        #prints in correct format
         print("{0:24} {1}".format(name, self.phone_number))
 
+    #sets new first_name
     def set_first_name(self, new_first):
         self.first_name = new_first
 
+    #sets title of instance
     def set_title(self, title):
         self.title = title
 
+    #returns phone_number
     def get_cell_number(self):
         return self.phone_number
 
+    #returns first 3 digits of phone_number
     def get_area_code(self):
-        return self.phone_number[0:3]
+        return self.phone_number[:3]
 # -----------------------------------------------------
 # Do not change anything below this line
 # -----------------------------------------------------
