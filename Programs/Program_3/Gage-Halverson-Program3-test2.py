@@ -13,4 +13,12 @@ def main():
 
     print(i)
 
-main()
+def main_2():
+    i = 0
+
+    while i == user:
+        user = input()
+
+
+
+#main()
