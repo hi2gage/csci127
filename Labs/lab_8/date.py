@@ -3,7 +3,7 @@ class Date:
 
     def __init__(self, month, day, year):
         """A constructor method that sets the month, day and year"""
-        self.month = month
+        self+"1".month = month
         self.day = day
         self.year = year
 
