@@ -1,0 +1,141 @@
+1. Print Pokedex
+2. Print Pokemon by Name
+3. Print Pokemon by Number
+4. Count Pokemon with Type
+5. Print Average Pokemon Combat Points
+6. Quit
+
+Enter a menu option: 1
+
+The Pokedex
+-----------
+Number: 1, Name: Bulbasaur, CP: 318: Type: grass and poison
+Number: 2, Name: Ivysaur, CP: 405: Type: grass and poison
+Number: 3, Name: Venusaur, CP: 525: Type: grass and poison
+Number: 4, Name: Charmander, CP: 309: Type: fire
+Number: 5, Name: Charmeleon, CP: 405: Type: fire
+Number: 6, Name: Charizard, CP: 534: Type: fire and flying
+Number: 7, Name: Squirtle, CP: 314: Type: water
+Number: 8, Name: Wartortle, CP: 405: Type: water
+Number: 9, Name: Blastoise, CP: 530: Type: water
+Number: 10, Name: Caterpie, CP: 195: Type: bug
+Number: 11, Name: Metapod, CP: 205: Type: bug
+Number: 12, Name: Butterfree, CP: 395: Type: bug and flying
+Number: 13, Name: Weedle, CP: 195: Type: bug and poison
+Number: 14, Name: Kakuna, CP: 205: Type: bug and poison
+Number: 15, Name: Beedrill, CP: 395: Type: bug and poison
+Number: 16, Name: Pidgey, CP: 251: Type: normal and flying
+Number: 17, Name: Pidgeotto, CP: 349: Type: normal and flying
+Number: 18, Name: Pidgeot, CP: 479: Type: normal and flying
+Number: 19, Name: Rattata, CP: 253: Type: normal
+Number: 20, Name: Raticate, CP: 413: Type: normal
+Number: 21, Name: Spearow, CP: 262: Type: normal and flying
+Number: 22, Name: Fearow, CP: 442: Type: normal and flying
+Number: 23, Name: Ekans, CP: 288: Type: poison
+Number: 24, Name: Arbok, CP: 448: Type: poison
+Number: 25, Name: Pikachu, CP: 320: Type: electric
+Number: 26, Name: Raichu, CP: 485: Type: electric and psychic
+Number: 27, Name: Sandshrew, CP: 300: Type: ground
+Number: 28, Name: Sandslash, CP: 450: Type: ground
+Number: 29, Name: Nidoran, CP: 275: Type: poison
+Number: 30, Name: Nidorina, CP: 365: Type: poison
+Number: 810, Name: Yeet, CP: 777: Type: steel and fire and water and grass and electric and psychic and ice and dragon and dark and fairy and ???
+
+1. Print Pokedex
+2. Print Pokemon by Name
+3. Print Pokemon by Number
+4. Count Pokemon with Type
+5. Print Average Pokemon Combat Points
+6. Quit
+
+Enter a menu option: 2
+Enter a Pokemon name: RAICHU
+Number: 26, Name: Raichu, CP: 485: Type: electric and psychic
+
+1. Print Pokedex
+2. Print Pokemon by Name
+3. Print Pokemon by Number
+4. Count Pokemon with Type
+5. Print Average Pokemon Combat Points
+6. Quit
+
+Enter a menu option: 2
+Enter a Pokemon name: raichump
+There is no Pokemon named raichump
+
+1. Print Pokedex
+2. Print Pokemon by Name
+3. Print Pokemon by Number
+4. Count Pokemon with Type
+5. Print Average Pokemon Combat Points
+6. Quit
+
+Enter a menu option: 3
+Enter a Pokemon number: 26
+Number: 26, Name: Raichu, CP: 485: Type: electric and psychic
+
+1. Print Pokedex
+2. Print Pokemon by Name
+3. Print Pokemon by Number
+4. Count Pokemon with Type
+5. Print Average Pokemon Combat Points
+6. Quit
+
+Enter a menu option: 3
+Enter a Pokemon number: 34
+There is no Pokemon number 34
+
+1. Print Pokedex
+2. Print Pokemon by Name
+3. Print Pokemon by Number
+4. Count Pokemon with Type
+5. Print Average Pokemon Combat Points
+6. Quit
+
+Enter a menu option: 4
+Enter a Pokemon type: Normal
+Number of Pokemon that contain type normal = 7
+
+1. Print Pokedex
+2. Print Pokemon by Name
+3. Print Pokemon by Number
+4. Count Pokemon with Type
+5. Print Average Pokemon Combat Points
+6. Quit
+
+Enter a menu option: 4
+Enter a Pokemon type: ???
+Number of Pokemon that contain type ??? = 1
+
+1. Print Pokedex
+2. Print Pokemon by Name
+3. Print Pokemon by Number
+4. Count Pokemon with Type
+5. Print Average Pokemon Combat Points
+6. Quit
+
+Enter a menu option: 4
+Enter a Pokemon type: unknown
+Number of Pokemon that contain type unknown = 0
+
+1. Print Pokedex
+2. Print Pokemon by Name
+3. Print Pokemon by Number
+4. Count Pokemon with Type
+5. Print Average Pokemon Combat Points
+6. Quit
+
+Enter a menu option: 5
+Average Pokemon combat points = 370.71
+
+1. Print Pokedex
+2. Print Pokemon by Name
+3. Print Pokemon by Number
+4. Count Pokemon with Type
+5. Print Average Pokemon Combat Points
+6. Quit
+
+Enter a menu option: 6
+Thank you.  Goodbye!
+
+
