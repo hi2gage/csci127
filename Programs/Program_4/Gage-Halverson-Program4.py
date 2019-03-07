@@ -3,10 +3,15 @@ import string
 # ---------------------------------------
 # CSCI 127, Joy and Beauty of Data      |
 # Program 4: Pokedex                    |
-# Your Name(, Your Partner's Name)      |
-# Last Modified: ??, 2019               |
+# Gage Halverson                        |
+# Last Modified: March, 6th 2019        |
 # ---------------------------------------
-# A brief overview of the program.
+# This program uses objects to create
+# different Pokemon then compile them
+# into a list of all the Pokemon. The
+# program can then prompts the user to
+# decide what they want to use too lookup
+# data about that Pokemon.
 # ---------------------------------------
 class Pokemon:
     #creates class objects
