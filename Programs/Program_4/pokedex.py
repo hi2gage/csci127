@@ -9,41 +9,88 @@ import string
 # A brief overview of the program.
 # ---------------------------------------
 class Pokemon:
+    #creates class objects
     def __init__(self, name, number, combat_points, types):
         self.number = number
         self.name = name
         self.combat_points = combat_points
         self.types = types
 
+    #Special String method explaining how to print objects
     def __str___(self):
         pokemon_print = "Number: " + str(self.number) \
-        + ", Name: " + str(self.name) \
+        + ", Name: " + str(self.name).capitalize() \
         + ", CP: " + str(self.combat_points) \
         + ": Type: " + str(', '.join(self.types).replace(",", " and"))
         return pokemon_print
 
+    #looks up name of object
     def Lookup_by_name(self):
         return self.name
 
+    #looks up number of object
+    def Lookup_by_number(self):
+        return self.number
 
+    #looks up name of object
+    def Lookup_by_type(self):
+        return list(self.types)
 
+    #looks up Combat Points of object
+    def Lookup_Combat_Points(self):
+        return self.combat_points
 
-
+#Finds pokemon in list of objects by name
+#then uses string to print the object
 def lookup_by_name(pokedex, name):
     i = 0
-    print(name)
-    print(pokedex[i].Lookup_by_name())
+    exists = False
+    for pokemon in pokedex:
+        if pokedex[i].Lookup_by_name() == name:
+            print(str(pokedex[i].__str___()))
+            exists = True
+            break
+        i += 1
+    if exists == False:
+        print("There is no Pokemon named " + name)
 
+#Finds pokemon in list of objects by number
+#then uses string to print the object
 def lookup_by_number(pokedex, number):
-    pass
+    i = 0
+    exists = False
+    for pokemon in pokedex:
+        if pokedex[i].Lookup_by_number() == number:
+            print(str(pokedex[i].__str___()))
+            exists = True
+            break
+        i += 1
+    if exists == False:
+        print("There is no Pokemon number " + str(number))
 
+#Goes through all the objects in list and counts how many of certain type
 def total_by_type(pokedex, pokemon_type):
-    pass
+    count_type = 0
+    i = 0
+    for pokemon in pokedex:
+        count_type += pokedex[i].Lookup_by_type().count(pokemon_type.lower())
+        i += 1
+    print("Number of Pokemon that contain type " \
+        + pokemon_type.capitalize() \
+        + " = " + str(count_type))
 
+#Adds all the Combat Points of all objects in list then finds average
 def average_hit_points(pokedex):
-    pass
+    i = 0
+    points_count = 0
+    for pokemon in pokedex:
+        points_count += int(pokedex[i].Lookup_Combat_Points())
+        i += 1
+    average = points_count/i
+    print("Average Pokemon combat points = " + str(round(average, 2)))
 
 
+#Goes through list of objects and prints all of them
 def print_pokedex(pokedex):
     print()
     print("The Pokedex")
@@ -53,8 +100,7 @@ def print_pokedex(pokedex):
         print(pokedex[i].__str___(), sep = "\n")
         i += 1
 
-        #print(pokedex[0].__str___())
-
+#Prints out menu options
 def print_menu():
     print("1. Print Pokedex")
     print("2. Print Pokemon by Name")
@@ -62,8 +108,7 @@ def print_menu():
     print("4. Count Pokemon with Type")
     print("5. Print Average Pokemon Combat Points")
     print("6. Quit")
-
-
+    print()
 
 # ---------------------------------------
 # Do not change anything below this line

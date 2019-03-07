@@ -137,5 +137,3 @@ Average Pokemon combat points = 370.71
 
 Enter a menu option: 6
 Thank you.  Goodbye!
-
-
