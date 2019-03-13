@@ -1,4 +1,4 @@
-1. Print Pokedex
+11. Print Pokedex
 2. Print Pokemon by Name
 3. Print Pokemon by Number
 4. Count Pokemon with Type
