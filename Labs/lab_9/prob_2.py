@@ -15,5 +15,3 @@ class Refrigerator(Appliance):
 my_refrigerator = Refrigerator("Samsung", "R134a")
 print(str(my_refrigerator))
 # R134a is the refrigerant (cooling agent) used
-
-#print(help(Refrigerator))
