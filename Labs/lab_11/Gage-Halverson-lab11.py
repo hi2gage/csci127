@@ -56,12 +56,17 @@ class Yahtzee:
         if two + three == 1 and three == 1:
             return True
 
-
-
-
-
     def is_it_large_straight(self):
-        pass
+        roll = self.rolls
+        roll.sort()
+        j = 0
+        for i in range(5):
+            if (roll[i-1] - roll[i]) == -1:
+                j += 1
+        if j == 4:
+            return True
+
+
 
 # -------------------------------------------------
 
@@ -81,8 +86,6 @@ def main(how_many):
         elif game.is_it_large_straight():
             large_straights += 1
 
-    #print(game.j)
-
     print("Number of Rolls:", how_many)
     print("---------------------")
     print("Number of High Rolls:", high_rolls)
@@ -94,4 +97,4 @@ def main(how_many):
 
 # -------------------------------------------------
 
-main(50)
+main(20000)
