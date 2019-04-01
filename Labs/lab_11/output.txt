@@ -1,0 +1,10 @@
+Number of Rolls: 20000
+---------------------
+Number of High Rolls: 18
+Percent: 0.09%
+
+Number of Three of a Kinds: 1995
+Percent: 9.97%
+
+Number of Large Straights: 5
+Percent: 0.03%
