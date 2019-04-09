@@ -56,7 +56,7 @@ class PegRectangleSolitaire:
     def legal_move(self, row_start, col_start, row_end, col_end):
         #first checks to see if
         two_away = False
-        if self.board[row_start][col_start] == True:
+        if self.board[row_start][col_start] == True and self.board[row_end][col_end] == False:
             if abs(row_start - row_end) == 2 and abs(col_start - col_end) == 0:
                 two_away = True
             elif abs(row_start - row_end) == 2 and abs(col_start - col_end) == 2:
