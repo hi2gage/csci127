@@ -4,10 +4,15 @@ import string
 # ---------------------------------------
 # CSCI 127, Joy and Beauty of Data      |
 # Program 5: Peg Rectangle Solitaire    |
-# Your Name(, Your Partner's Name)      |
-# Last Modified: ??, 2019               |
+# Gage Halverson                        |
+# Last Modified: 4/12/19                |
 # ---------------------------------------
-# A brief overview of the program.
+# Game of Rectangle Solitaire. Which starts by building
+# an array of Boolean values. legal_move checks to see if
+# the move is allowed based on the rule sets. If it is
+# it makes the move setting starting to False, Center to
+# False and Ending to True. The program also keeps track
+# of how many pegs are left on the board.
 # ---------------------------------------
 
 # ---------------------------------------
@@ -54,7 +59,7 @@ class PegRectangleSolitaire:
 # not modify anything else.             |
 # --------------------------------------|
     def legal_move(self, row_start, col_start, row_end, col_end):
-        #first checks to see if
+        #first checks to see if starting spot and ending spot are 2 away in any direction
         two_away = False
         if self.board[row_start][col_start] == True and self.board[row_end][col_end] == False:
             if abs(row_start - row_end) == 2 and abs(col_start - col_end) == 0:
@@ -68,55 +73,29 @@ class PegRectangleSolitaire:
         else:
             return False
 
+        #checks to see if the peg in the middle is True
         if two_away == True:
-            if row_start > row_end:
-                remove_row = row_end + 1
-            elif row_start == row_end:
-                remove_row = row_end
-            elif row_start < row_end:
-                remove_row = row_end - 1
-            else:
-                remove_row = row_end - 1
+            col = int(int(col_start + col_end) / 2)
+            row = int(int(row_start + row_end) / 2)
 
-
-            if col_start > col_end:
-                remove_col = col_end + 1
-            elif col_start == col_end:
-                remove_col = col_start
-            else:
-                remove_col = col_end - 1
-            if self.board[remove_row][remove_col] == True:
+            if self.board[row][col] == True:
                 return True
             else:
-                return
-
-
+                return False
 
     def make_move(self, row_start, col_start, row_end, col_end):
+        #updates # of pegs pegs_left
         self.pegs_left += -1
+        #sets starting peg to false and ending peg to True
         self.board[row_start][col_start] = False
         self.board[row_end][col_end] = True
 
+        #find postion of center peg
+        remove_col = int(int(col_start + col_end) / 2)
+        remove_row = int(int(row_start + row_end) / 2)
 
-        if row_start > row_end:
-            remove_row = row_end + 1
-        elif row_start == row_end:
-            remove_row = row_end
-        elif row_start < row_end:
-            remove_row = row_end - 1
-        else:
-            remove_row = row_end - 1
-
-
-        if col_start > col_end:
-            remove_col = col_end + 1
-        elif col_start == col_end:
-            remove_col = col_start
-        else:
-            remove_col = col_end - 1
-
+        #sets center peg to False
         self.board[remove_row][remove_col] = False
-
 
 
     def game_won(self):
@@ -124,6 +103,7 @@ class PegRectangleSolitaire:
             return True
 
     def final_message(self):
+        #depending on how many pegs left it prints different messages
         print("Number of pegs left: " + str(self.pegs_left))
         if self.pegs_left == 1:
             print("You're a genius!")
