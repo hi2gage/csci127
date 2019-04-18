@@ -11,10 +11,12 @@ from matplotlib import interactive
 def main(file_name):
     # read the file_name into a pandas dataframe
     data = pd.read_csv(file_name)
-    print(data)
 
-    data.plot.bar(color="turquoise")
-
+    column_names= list(data.columns.values)
+    x_axis = str(column_names[0])
+    y_axis = str(column_names[1])
+    #plt.figure(0)
+    data.plot(x=x_axis, y=y_axis, kind="bar", color=["blue", "gold"], legend = None, title = file_name[:-4])
     # plot the dataframe using arguments "title", "legend", "x", "y", "kind" and "color"
 
     # The only four statements that may use the matplotlib library appear next.
