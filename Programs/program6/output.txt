@@ -1,0 +1,6 @@
+0    3217
+1     685
+2     389
+3     735
+4     487
+Name: # of Delays.National Aviation System, dtype: int64

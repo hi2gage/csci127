@@ -35,7 +35,7 @@ data_frame.to_csv(file_name,index=False,header=True)
 jbd_data_frame = pd.read_csv(file_name)
 print("\nFirst 5 Items in Data Frame From File")
 print("-------------------------------------")
-print(jbd_data_frame[:5])
+print(jbd_data_frame[0:5])
 
 print("\nData Frame Info")
 print("---------------")
