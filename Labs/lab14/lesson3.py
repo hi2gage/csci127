@@ -22,9 +22,9 @@ failed_banks["Closing Year"].value_counts().plot(kind="bar", color="red")
 plt.subplot(122)
 plt.xlabel("Year")
 plt.ylabel("Failures")
-plt.title("FDIC Failed Banks")
+
+
 
 failed_banks["Closing Year"].value_counts(sort=False).plot("bar", color="violet")
 
 plt.show()
-
