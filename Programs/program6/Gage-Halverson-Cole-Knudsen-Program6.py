@@ -2,6 +2,12 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from matplotlib import interactive
 
+# ---------------------------------------
+# CSCI 127, Joy and Beauty of Data      |
+# Program 6: Data Visualization         |
+# Gage Halverson & Cole Knudsen         |
+# Last Modified: 4/25/19                |
+# ---------------------------------------
 
 
 
